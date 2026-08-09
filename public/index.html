@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="MIRROR — AI-powered application intelligence and observability."
+    >
+
+    <title>MIRROR — AI Application Intelligence</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+    <!-- ========================================
+         NAVBAR
+    ========================================= -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+
+            <span class="logo-mark">
+                M
+            </span>
+
+            <div class="logo-info">
+
+                <span class="logo-text">
+                    MIRROR
+                </span>
+
+                <span class="logo-subtitle">
+                    APPLICATION INTELLIGENCE
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="nav-right">
+
+            <div class="connection-status">
+
+                <span class="status-dot"></span>
+
+                <span>
+                    LIVE
+                </span>
+
+            </div>
+
+            <div class="system-indicator">
+                MONITORING
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- ========================================
+         MAIN
+    ========================================= -->
+
+    <main class="container">
+
+
+        <!-- ====================================
+             HERO
+        ==================================== -->
+
+        <section class="hero">
+
+            <div class="hero-label">
+                AI-POWERED APPLICATION INTELLIGENCE
+            </div>
+
+
+            <h1>
+                Your application
+                <span>has a twin.</span>
+            </h1>
+
+
+            <p class="hero-description">
+
+                MIRROR continuously observes your application,
+                detects changes, traces their impact, and explains
+                what is happening in plain language.
+
+            </p>
+
+
+            <div class="hero-meta">
+
+                <div class="meta-item">
+
+                    <span class="meta-dot green"></span>
+
+                    TARGET APPLICATION
+
+                    <strong>
+                        CONNECTED
+                    </strong>
+
+                </div>
+
+
+                <div class="meta-item">
+
+                    <span class="meta-dot blue"></span>
+
+                    MONITORING
+
+                    <strong>
+                        ACTIVE
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ====================================
+             SYSTEM HEALTH
+        ==================================== -->
+
+        <section class="health-card">
+
+            <div class="health-main">
+
+                <span class="card-label">
+                    SYSTEM HEALTH
+                </span>
+
+
+                <div class="health-score">
+                    98
+                </div>
+
+
+                <div class="health-score-label">
+                    / 100
+                </div>
+
+
+                <div class="healthy-message">
+
+                    <span class="status-dot"></span>
+
+                    Everything looks good
+
+                </div>
+
+
+                <div class="health-bar">
+
+                    <div
+                        class="health-bar-fill"
+                        id="healthBarFill"
+                        style="width: 98%;"
+                    ></div>
+
+                </div>
+
+            </div>
+
+
+            <div class="health-metrics">
+
+
+                <!-- API -->
+
+                <div class="metric-card">
+
+                    <div class="metric-top">
+
+                        <div class="metric-title">
+                            API
+                        </div>
+
+                        <span
+                            class="metric-status"
+                            id="apiStatus"
+                        >
+                            ● HEALTHY
+                        </span>
+
+                    </div>
+
+
+                    <small>
+                        Response time
+                    </small>
+
+
+                    <strong>
+                        124ms
+                    </strong>
+
+                </div>
+
+
+                <!-- DATABASE -->
+
+                <div class="metric-card">
+
+                    <div class="metric-top">
+
+                        <div class="metric-title">
+                            DATABASE
+                        </div>
+
+                        <span class="metric-status">
+                            ● HEALTHY
+                        </span>
+
+                    </div>
+
+
+                    <small>
+                        Connection
+                    </small>
+
+
+                    <strong>
+                        18ms
+                    </strong>
+
+                </div>
+
+
+                <!-- ERRORS -->
+
+                <div class="metric-card">
+
+                    <div class="metric-top">
+
+                        <div class="metric-title">
+                            ERRORS
+                        </div>
+
+                        <span
+                            class="metric-status"
+                            id="errorStatus"
+                        >
+                            ● HEALTHY
+                        </span>
+
+                    </div>
+
+
+                    <small>
+                        Last 24 hours
+                    </small>
+
+
+                    <strong>
+                        3
+                    </strong>
+
+                </div>
+
+
+                <!-- DEPLOYMENT -->
+
+                <div class="metric-card">
+
+                    <div class="metric-top">
+
+                        <div class="metric-title">
+                            DEPLOYMENT
+                        </div>
+
+                        <span class="metric-status">
+                            ● ACTIVE
+                        </span>
+
+                    </div>
+
+
+                    <small>
+                        Latest release
+                    </small>
+
+
+                    <strong>
+                        4m ago
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ====================================
+             SIMULATION
+        ==================================== -->
+
+        <section class="simulation-card">
+
+            <div class="simulation-content">
+
+                <div class="section-label">
+                    MIRROR SIMULATION
+                </div>
+
+
+                <h2>
+                    See what happens when things change.
+                </h2>
+
+
+                <p>
+
+                    Simulate a real application change and
+                    watch MIRROR detect, investigate and
+                    explain the resulting impact.
+
+                </p>
+
+            </div>
+
+
+            <button
+                id="simulateButton"
+                class="simulate-button"
+                type="button"
+            >
+
+                SIMULATE CHANGE
+
+                <span>
+                    →
+                </span>
+
+            </button>
+
+        </section>
+
+
+        <!-- ====================================
+             IMPACT MAP
+        ==================================== -->
+
+        <section class="impact-card">
+
+            <div class="impact-header">
+
+                <div>
+
+                    <div class="section-label">
+                        MIRROR IMPACT MAP
+                    </div>
+
+
+                    <h2>
+                        See how a change spreads.
+                    </h2>
+
+
+                    <p>
+
+                        MIRROR traces the relationship between
+                        application changes, performance,
+                        errors and system health.
+
+                    </p>
+
+                </div>
+
+
+                <span
+                    class="impact-status"
+                    id="impactLiveStatus"
+                >
+                    ● LIVE
+                </span>
+
+            </div>
+
+
+            <div class="impact-map">
+
+
+                <!-- TRIGGER -->
+
+                <div class="impact-node change-node">
+
+                    <span class="node-icon">
+                        ⚡
+                    </span>
+
+
+                    <div class="node-content">
+
+                        <small>
+                            TRIGGER
+                        </small>
+
+
+                        <strong>
+                            Application Change
+                        </strong>
+
+
+                        <span class="node-description">
+                            A change occurs in the target application.
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="impact-line"></div>
+
+
+                <!-- API -->
+
+                <div class="impact-node api-node">
+
+                    <span class="node-icon">
+                        API
+                    </span>
+
+
+                    <div class="node-content">
+
+                        <small>
+                            API PERFORMANCE
+                        </small>
+
+
+                        <strong id="impactApi">
+                            124ms
+                        </strong>
+
+
+                        <span class="node-description">
+                            Request processing latency.
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="impact-line"></div>
+
+
+                <!-- ERRORS -->
+
+                <div class="impact-node error-node">
+
+                    <span class="node-icon">
+                        !
+                    </span>
+
+
+                    <div class="node-content">
+
+                        <small>
+                            ERROR ACTIVITY
+                        </small>
+
+
+                        <strong id="impactErrors">
+                            3
+                        </strong>
+
+
+                        <span class="node-description">
+                            Application errors detected.
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="impact-line"></div>
+
+
+                <!-- HEALTH -->
+
+                <div class="impact-node health-node">
+
+                    <span class="node-icon">
+                        ♥
+                    </span>
+
+
+                    <div class="node-content">
+
+                        <small>
+                            SYSTEM HEALTH
+                        </small>
+
+
+                        <strong>
+
+                            <span id="impactHealth">
+                                98
+                            </span>
+
+                            /100
+
+                        </strong>
+
+
+                        <span class="node-description">
+                            Overall application health.
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="impact-line"></div>
+
+
+                <!-- ROOT CAUSE -->
+
+                <div class="impact-node root-node">
+
+                    <span class="node-icon">
+                        🎯
+                    </span>
+
+
+                    <div class="node-content">
+
+                        <small>
+                            PROBABLE ROOT CAUSE
+                        </small>
+
+
+                        <strong id="impactCause">
+                            No anomaly detected
+                        </strong>
+
+
+                        <span class="node-description">
+                            MIRROR's current assessment.
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================
+                 IMPACT SUMMARY
+            ================================= -->
+
+            <div class="impact-summary">
+
+                <div>
+
+                    <span>
+                        SEVERITY
+                    </span>
+
+
+                    <strong id="impactSeverity">
+                        LOW
+                    </strong>
+
+                </div>
+
+
+                <div>
+
+                    <span>
+                        CONFIDENCE
+                    </span>
+
+
+                    <strong id="impactConfidence">
+                        98%
+                    </strong>
+
+                </div>
+
+
+                <div>
+
+                    <span>
+                        STATUS
+                    </span>
+
+
+                    <strong id="impactStatusText">
+                        HEALTHY
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ====================================
+             INTELLIGENCE
+        ==================================== -->
+
+        <section class="intelligence-card">
+
+            <div class="intelligence-icon">
+                ✦
+            </div>
+
+
+            <div class="intelligence-content">
+
+                <div class="section-label">
+                    MIRROR INTELLIGENCE
+                </div>
+
+
+                <h2>
+                    System analysis
+                </h2>
+
+
+                <div id="analysisContent">
+
+                    <div class="analysis-empty">
+
+                        <div class="analysis-empty-icon">
+                            ◌
+                        </div>
+
+
+                        <div>
+
+                            <strong>
+                                Waiting for system activity
+                            </strong>
+
+
+                            <p>
+
+                                Run a simulation to let MIRROR
+                                investigate a change and explain
+                                its probable impact.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ====================================
+             TARGET APPLICATION
+        ==================================== -->
+
+        <section class="target-card">
+
+            <div class="target-header">
+
+                <div>
+
+                    <div class="section-label">
+                        TARGET APPLICATION
+                    </div>
+
+
+                    <h2>
+                        MIRROR is connected to your application.
+                    </h2>
+
+
+                    <p>
+
+                        The target application is monitored
+                        independently from the MIRROR dashboard.
+
+                    </p>
+
+                </div>
+
+
+                <span
+                    class="target-badge"
+                    id="targetBadge"
+                >
+                    CONNECTED
+                </span>
+
+            </div>
+
+
+            <div class="target-grid">
+
+                <div class="target-item">
+
+                    <span>
+                        ENDPOINT
+                    </span>
+
+
+                    <strong>
+                        localhost:4000
+                    </strong>
+
+                </div>
+
+
+                <div class="target-item">
+
+                    <span>
+                        STATUS
+                    </span>
+
+
+                    <strong
+                        class="target-green"
+                        id="targetStatus"
+                    >
+                        HEALTHY
+                    </strong>
+
+                </div>
+
+
+                <div class="target-item">
+
+                    <span>
+                        MONITOR
+                    </span>
+
+
+                    <strong>
+                        ACTIVE
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ====================================
+             EVENTS
+        ==================================== -->
+
+        <section class="events-card">
+
+            <div class="events-header">
+
+                <div>
+
+                    <div class="section-label">
+                        LIVE APPLICATION EVENTS
+                    </div>
+
+
+                    <h2>
+                        Application timeline
+                    </h2>
+
+
+                    <p>
+
+                        MIRROR continuously observes
+                        application activity.
+
+                    </p>
+
+                </div>
+
+
+                <span class="impact-status">
+                    ● LIVE
+                </span>
+
+            </div>
+
+
+            <div
+                id="eventsList"
+                class="events-list"
+            >
+
+                <div class="event-loading">
+                    Loading application events...
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ========================================
+         FOOTER
+    ========================================= -->
+
+    <footer>
+
+        <div class="footer-logo">
+            MIRROR
+        </div>
+
+
+        <div>
+            AI-powered application intelligence
+        </div>
+
+
+        <div class="footer-status">
+            SYSTEM ONLINE
+        </div>
+
+    </footer>
+
+
+    <!-- ========================================
+         JAVASCRIPT
+    ========================================= -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
