@@ -14,4 +14,4 @@ zerops:
       ports:
         - port: 3000
           httpSupport: true
-      start: node server.js
+      start: node target-server.js & node server.js
